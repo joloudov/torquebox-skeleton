@@ -4,10 +4,12 @@ gem 'rails', '4.0.0'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
+gem 'angularjs-rails'
+gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+
 
 platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2'
@@ -21,6 +23,7 @@ end
 
 platforms :ruby do
   gem 'sqlite3'
+  gem 'therubyracer'
 
   group :test do
     gem 'torquebox-no-op'

@@ -26,6 +26,9 @@ platforms :ruby do
   gem 'therubyracer'
 
   group :test do
+    gem 'spring'
+    gem 'guard-rspec'
+    gem 'guard-cucumber'
     gem 'torquebox-no-op'
   end
 end
